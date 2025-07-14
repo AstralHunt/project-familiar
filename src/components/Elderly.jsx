@@ -10,17 +10,24 @@ const Elderly = () => {
         <div className="w-full basis-1/2 md:w-[50vw] bg-primary p-8 md:p-12">
           <div className="flex flex-col items-center justify-center text-center pt-[10%]">
             <h2 className="text-white text-2xl md:text-4xl mb-4">Elderly</h2>
-            <h6 className="text-white/90 text-sm md:text-base md:px-[10%] lg:px-[20%]">
-              From diaries to cognitive games, Familiar considers the patient's needs to remember the ones that love them the most, their family members
+            <h6 className="text-white/90 text-sm md:text-base md:mx-[10%] lg:mx-[20%] border-b-white border-b-[1px] pb-[10px]">
+              From diaries to cognitive games, Familiar considers the patient's needs to remember the ones that love
+              them the most, their family members
             </h6>
+            <div
+              className="h-0 w-0 border-x-8 border-x-transparent border-t-[16px] border-t-white"
+            ></div>
           </div>
         </div>
         <div className="w-full basis-1/2 md:w-[50vw] h-[300px] md:h-auto">
-          <Image className="w-full h-full object-cover" src={ELDERLY} alt="caregiver" width={1280} height={856}
+        <Image className="w-full h-full object-cover" src={ELDERLY} alt="caregiver" width={1280} height={856}
                  placeholder={"blur"}/>
         </div>
       </div>
-      <div className="p-4">Text</div>
+      <div className="flex flex-col items-center justify-center text-center pt-[10%]">
+
+
+      </div>
     </div>
   );
 };

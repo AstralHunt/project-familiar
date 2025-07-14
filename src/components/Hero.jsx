@@ -12,10 +12,10 @@ const Hero = () => {
           <div className="flex h-full w-full justify-between items-center">
             <div className="flex flex-col basis-1/3 justify-center items-center h-64 w-96 z-10 gap-12">
               <div className="flex flex-col justify-center items-start gap-6">
-                <h1  className="w-full mb-4">Everyone deserves a helping hand</h1>
-                <h6 className="w-[85%]">Our team has devised a tool with a sole purpose of assisting dementia patients and caregivers</h6>
+                <h1  className="w-full">Everyone deserves a helping hand</h1>
+                <h6 className="w-[85%]">Our superb team has designed a solution that provides aid both dementia patients and aid caregivers all in one convenient tool</h6>
               </div>
-              <div className="flex w-full justify-center basis-1/5 gap-4">
+              <div className="flex w-full justify-start basis-1/5 gap-4">
                 <a href="" className="flex items-center gap-2 text-lg font-bold bg-primary pt-3 pb-3 pl-5 pr-5 drop-shadow-lg drop-shadow-gray-400 rounded-xl text-white">
                   <IoMdDownload /> View Proposal
                 </a>
