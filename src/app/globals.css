@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-geist-sans: "Inter", sans-serif;
+  --font-geist-mono: "Fira Code", monospace;
+  scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -10,6 +13,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-primary: #0F4662;
 }
 
 /*@media (prefers-color-scheme: dark) {*/
@@ -19,8 +23,60 @@
 /*  }*/
 /*}*/
 
+
 body {
+  h1 {
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 1.2em;
+  }
+  h2 {
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 1.2em;
+  }
+  h3 {
+    font-size: 40px;
+  }
+
+  h5 {
+    font-size: 19px;
+  }
+  h6 {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+  font-family: 'Kumbh Sans Variable', sans-serif;
+  scroll-behavior: inherit;
+}
+
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+#total {
+  animation: counter 3s forwards ease-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+
+#total::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 49 ;
+  }
 }
