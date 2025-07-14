@@ -7,24 +7,25 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="w-screen h-[70vh] pl-[10vw] pr-[10vw] md:scroll-mt-30">
+    <div className="w-screen h-[70vh] pl-[10vw] pr-[10vw] md:scroll-mt-30 overflow-hidden">
         <div className="bg-white h-full w-full">
-          <div className="flex h-full w-full justify-between items-center">
-            <div className="flex flex-col basis-1/3 justify-center items-center h-64 w-96 z-10 gap-12">
+          <div className="grid grid-cols-6 h-full w-full justify-between items-center">
+            <div className="flex flex-col w-full row-start-1 row-span-1 col-start-1 col-end-4 justify-center items-center h-64 z-10 gap-12">
               <div className="flex flex-col justify-center items-start gap-6">
                 <h1  className="w-full">Everyone deserves a helping hand</h1>
-                <h6 className="w-[85%]">Our superb team has designed a solution that provides aid both dementia patients and aid caregivers all in one convenient tool</h6>
+                <h6 className="w-[75%]">Our superb team has designed a toolbox of solutions that lessens the workload on caregivers and helps dementia patients maintain familiarity with their daily lives&nbsp;
+                  <a href=""><span className="text-primary font-[400]">all in one convenient tool</span></a>.</h6>
               </div>
               <div className="flex w-full justify-start basis-1/5 gap-4">
-                <a href="" className="flex items-center gap-2 text-lg font-bold bg-primary pt-3 pb-3 pl-5 pr-5 drop-shadow-lg drop-shadow-gray-400 rounded-xl text-white">
+                <a href="" className="flex items-center gap-2 text-lg font-bold bg-primary pt-4 pb-4 pl-6 pr-6 drop-shadow-lg drop-shadow-gray-400 rounded-xl text-white">
                   <IoMdDownload /> View Proposal
                 </a>
-                <a href="" className="flex items-center gap-2 text-lg font-bold border-2 border-primary pt-3 pb-3 pl-5 pr-5 rounded-xl text-primary hover:bg-primary hover:text-white">
+                <a href="" className="flex items-center gap-2 text-lg font-bold border-2 border-primary pt-4 pb-4 pl-6 pr-6 rounded-xl text-primary hover:bg-primary hover:text-white">
                   <FaRegCirclePlay /> Watch Presentation
                 </a>
               </div>
             </div>
-            <div className="flex basis-2/3 justify-center align-bottom h-full w-full">
+            <div className="flex row-start-1 row-span-1 col-span-5 -col-start-5 justify-center  h-full w-full">
               <Image src={HERO} alt={"hero"} className="object-cover "/>
             </div>
           </div>

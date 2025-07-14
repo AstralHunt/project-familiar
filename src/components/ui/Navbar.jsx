@@ -1,5 +1,7 @@
 "use client"
 import {useState, useEffect} from 'react';
+import LOGO from "../../../public/LOGO.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +24,15 @@ const Navbar = () => {
     <nav className="flex justify-between w-full items-center h-20 md:h-32 py-4 md:py-8">
         <div className="flex justify-between md:justify-start md:basis-4/5 md:gap-12 w-full items-center">
         <div className="py-1">
-            <a href="" className="text-5xl text-[#176F9C] font-bold">Familiar</a>
+          <div className="flex">
+            <div className="w-[50px] h-[50px]">
+              <Image
+                src={LOGO}
+                alt="logo"
+                width={300}
+                height={300}
+              /></div>
+            <a href="" className="text-5xl text-[#176F9C] font-bold">Familiar</a></div>
           </div>
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

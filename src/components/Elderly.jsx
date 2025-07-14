@@ -2,10 +2,11 @@
 import React from 'react';
 import Image from "next/image";
 import ELDERLY from "../../public/Elderly.jpeg";
+import { PiHeadCircuitFill } from "react-icons/pi";
 
 const Elderly = () => {
   return (
-    <div id="caregiver" className="w-screen min-h-[30rem] md:h-[50rem] px-[10vw] md:scroll-mt-30">
+    <div id="elderly" className="flex flex-col gap-12 w-screen min-h-[30rem] mb-5 px-[10vw] md:scroll-mt-30">
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full basis-1/2 md:w-[50vw] bg-primary p-8 md:p-12">
           <div className="flex flex-col items-center justify-center text-center pt-[10%]">
@@ -24,8 +25,20 @@ const Elderly = () => {
                  placeholder={"blur"}/>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center text-center pt-[10%]">
+      {/*CARDS*/}
+      <div className="flex items-center">
 
+        <div className="max-w-lg rounded-xl bg-white shadow-3xl hover:border  transition-shadow duration-300 overflow-hidden">
+          <div className="p-6">
+            <div>
+              <PiHeadCircuitFill className="h-10 w-10"/>
+              <h3 className="text-xl font-semibold text-gray-800 mb-2">Cognitive Game</h3>
+            </div>
+            <p className="text-gray-600">
+              This is a simple card with some sample content. You can customize it further based on your needs.
+            </p>
+          </div>
+        </div>
 
       </div>
     </div>
