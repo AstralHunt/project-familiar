@@ -3,6 +3,9 @@ import React from 'react';
 import Image from "next/image";
 import ELDERLY from "../../public/Elderly.jpeg";
 import { PiHeadCircuitFill } from "react-icons/pi";
+import FeatureCards from "@/components/FeatureCards";
+import DASHBOARD2 from "../../public/Dashboard2.png";
+import SCHEDULE from "../../public/Schedule.png";
 
 const Elderly = () => {
   return (
@@ -26,19 +29,27 @@ const Elderly = () => {
         </div>
       </div>
       {/*CARDS*/}
-      <div className="flex items-center">
+      {/*<div className="flex items-center">*/}
 
-        <div className="max-w-lg rounded-xl bg-white shadow-3xl hover:border  transition-shadow duration-300 overflow-hidden">
-          <div className="p-6">
-            <div>
-              <PiHeadCircuitFill className="h-10 w-10"/>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">Cognitive Game</h3>
-            </div>
-            <p className="text-gray-600">
-              This is a simple card with some sample content. You can customize it further based on your needs.
-            </p>
-          </div>
-        </div>
+      {/*  <div className="max-w-lg rounded-xl bg-white shadow-3xl hover:border  transition-shadow duration-300 overflow-hidden">*/}
+      {/*    <div className="p-6">*/}
+      {/*      <div>*/}
+      {/*        <PiHeadCircuitFill className="h-10 w-10"/>*/}
+      {/*        <h3 className="text-xl font-semibold text-gray-800 mb-2">Cognitive Game</h3>*/}
+      {/*      </div>*/}
+      {/*      <h5 className="">*/}
+      {/*        This is a simple card with some sample content. You can customize it further based on your needs.*/}
+      {/*      </h5>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+
+      {/*</div>*/}
+      <div className="flex flex-col gap-24 justify-center items-center px-20">
+        <FeatureCards icon={"graph"} image={DASHBOARD2} title={"Dashboard Patient Monitoring"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"left"}></FeatureCards>
+
+
+        <FeatureCards icon={"head"} image={SCHEDULE} title={"Synced Scheduler"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n" +
+          "                Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"right"}></FeatureCards>
 
       </div>
     </div>

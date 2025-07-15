@@ -60,7 +60,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden md:flex justify-end basis-1/5">
-        <a href="" className="text-lg font-bold bg-primary  pt-3 pb-3 pl-5 pr-5 rounded-xl text-white">Login</a>
+        <a href="" className="text-lg font-bold bg-primary  pt-3 pb-3 pl-5 pr-5 rounded-xl text-white">Launch App</a>
         </div>
       </nav>
     </div>
