@@ -9,7 +9,7 @@ import SCHEDULE from "../../public/Schedule.png";
 
 const Elderly = () => {
   return (
-    <div id="elderly" className="flex flex-col gap-12 w-screen min-h-[30rem] mb-5 px-[10vw] md:scroll-mt-30">
+    <div id="elderly" className="flex flex-col pb-10 md:gap-12 md:pb-20 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full basis-1/2 md:w-[50vw] bg-primary p-8 md:p-12">
           <div className="flex flex-col items-center justify-center text-center pt-[10%]">
@@ -44,12 +44,12 @@ const Elderly = () => {
       {/*  </div>*/}
 
       {/*</div>*/}
-      <div className="flex flex-col gap-24 justify-center items-center px-20">
-        <FeatureCards icon={"graph"} image={DASHBOARD2} title={"Dashboard Patient Monitoring"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"left"}></FeatureCards>
+      <div className="flex flex-col gap-24 justify-center items-center md:px-20">
+        <FeatureCards icon={"game"} image={DASHBOARD2} title={"Cognitive Games"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"left"}></FeatureCards>
 
 
-        <FeatureCards icon={"head"} image={SCHEDULE} title={"Synced Scheduler"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n" +
-          "                Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"right"}></FeatureCards>
+        <FeatureCards icon={"book"} image={SCHEDULE} title={"Synced Diary"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n" +
+          "                Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"left"}></FeatureCards>
 
       </div>
     </div>

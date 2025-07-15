@@ -11,11 +11,11 @@ const Hero = () => {
     <div className="bg-white h-full w-full">
       <div className="grid grid-cols-1 md:grid-cols-5 h-full w-full justify-between items-center gap-0">
         <div className="flex flex-col w-full md:row-start-1 md:row-span-1 md:col-start-1 md:col-end-3 justify-center items-center h-auto md:h-64 z-10 gap-8 md:gap-12 py-8 md:py-0">
-        <div className="flex flex-col justify-center items-start gap-3">
-                <h1  className="w-full">Everyone deserves a helping hand.</h1>
-                <h6 className="w-[80%]">Our superb team has designed a toolbox of solutions that lessens the workload on caregivers and helps dementia patients maintain familiarity with their daily lives&nbsp;
-                  <a href=""><span className="text-primary font-[400]">all in one convenient tool</span></a>.</h6>
-              </div>
+          <div className="flex flex-col justify-center items-start gap-3">
+            <h1  className="w-full">Everyone deserves a helping hand.</h1>
+            <h6 className="w-[80%]">Our superb team has designed a toolbox of solutions that lessens the workload on caregivers and helps dementia patients maintain familiarity with their daily lives&nbsp;
+              <a href=""><span className="text-primary font-[400]">all in one convenient tool</span></a>.</h6>
+          </div>
           <div className="flex flex-col sm:flex-row w-full justify-start basis-1/5 gap-4">
           <a href="" className="flex items-center gap-2 text-lg font-bold bg-primary pt-4 pb-4 pl-6 pr-6 drop-shadow-lg drop-shadow-gray-400 rounded-xl text-white">
                   <IoMdDownload /> View Proposal
