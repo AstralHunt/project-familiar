@@ -9,18 +9,23 @@ import SCHEDULE from "../../public/Schedule.png";
 
 const Elderly = () => {
   return (
-    <div id="elderly" className="flex flex-col pb-10 md:gap-12 md:pb-20 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
+    <div id="elderly" className="flex flex-col pb-10 md:gap-12 md:pb-40 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full basis-1/2 md:w-[50vw] bg-primary p-8 md:p-12">
-          <div className="flex flex-col items-center justify-center text-center pt-[10%]">
-            <h2 className="text-white text-2xl md:text-4xl mb-4">Elderly</h2>
-            <h6 className="text-white/90 text-sm md:text-base md:mx-[10%] lg:mx-[20%] border-b-white border-b-[1px] pb-[10px]">
-              From diaries to cognitive games, Familiar considers the patient's needs to remember the ones that love
-              them the most, their family members
-            </h6>
-            <div
-              className="h-0 w-0 border-x-8 border-x-transparent border-t-[16px] border-t-white"
-            ></div>
+          <div className="h-full flex flex-col items-center justify-between text-center pt-[10%]">
+            <div>
+              <h2 className="text-white text-2xl md:text-4xl mb-4">Elderly</h2>
+              <h6
+                className="text-white/90 text-sm md:text-base md:mx-[10%] lg:mx-[15%] ">
+                From diaries to cognitive games, Familiar considers the patient's needs to remember the ones that love
+                them the most, their family members.
+                <br/>
+                <br/>
+                Designed to be easily navigable by older users, The Patient Portal offers larger buttons and no delete functionality as well, ensuring the patient's memories are always safe.
+                <br/>
+              </h6>
+            </div>
+            {/*<div className="justify-self-end self-end"><h5 className="text-white italic">...see more below</h5></div>*/}
           </div>
         </div>
         <div className="w-full basis-1/2 md:w-[50vw] h-[300px] md:h-auto">
@@ -28,6 +33,7 @@ const Elderly = () => {
                  placeholder={"blur"}/>
         </div>
       </div>
+      {/*border-b-white border-b-[1px] pb-[10px]*/}
       {/*CARDS*/}
       {/*<div className="flex items-center">*/}
 
@@ -44,12 +50,13 @@ const Elderly = () => {
       {/*  </div>*/}
 
       {/*</div>*/}
-      <div className="flex flex-col gap-24 justify-center items-center md:px-20">
+      <div className="flex flex-col gap-2 md:gap-24 justify-center items-center md:px-20">
         <FeatureCards icon={"game"} image={DASHBOARD2} title={"Cognitive Games"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"left"}></FeatureCards>
 
 
-        <FeatureCards icon={"book"} image={SCHEDULE} title={"Synced Diary"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n" +
-          "                Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"left"}></FeatureCards>
+        <FeatureCards icon={"book"} image={SCHEDULE} title={"Synced Diary"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care fo"} position={"left"}></FeatureCards>
+
+        <FeatureCards icon={"people"} image={SCHEDULE} title={"Relationships Gallery"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help "} position={"left"}></FeatureCards>
 
       </div>
     </div>

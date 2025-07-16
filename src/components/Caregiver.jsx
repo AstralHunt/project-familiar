@@ -9,7 +9,7 @@ import FeatureCards from "@/components/FeatureCards";
 
 const Caregiver = () => {
   return (
-    <div id="caregiver" className="flex flex-col pb-10 md:gap-12 md:pb-20 w-screen min-h-[30rem] md:px-[10vw] md:scroll-mt-30">
+    <div id="caregiver" className="flex flex-col pb-10 md:gap-12 md:pb-40 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full basis-1/2 md:w-[50vw] h-[300px] md:h-auto">
           <Image className="w-full h-full object-cover" src={CAREGIVER} alt="caregiver" width={1280} height={856}
@@ -25,11 +25,11 @@ const Caregiver = () => {
         </div>
       </div>
       {/*CARDS*/}
-      <div className="flex flex-col gap-24 justify-center items-center md:px-20">
-        <FeatureCards icon={"graph"} image={DASHBOARD2} title={"Dashboard Patient Monitoring"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care   for."} position={"right"}></FeatureCards>
+      <div className="flex flex-col gap-2 md:gap-24 justify-center items-center md:px-20">
+        <FeatureCards icon={"graph"} image={DASHBOARD2} title={"Dashboard Patient Monitoring"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care   for."} position={"left"}></FeatureCards>
 
 
-        <FeatureCards icon={"schedule"} image={SCHEDULE} title={"Synced Scheduler"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n"} position={"right"}></FeatureCards>
+        <FeatureCards icon={"schedule"} image={SCHEDULE} title={"Synced Scheduler"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n"} position={"left"}></FeatureCards>
 
       </div>
     </div>

@@ -25,7 +25,7 @@ const Hero = () => {
                 </a>
               </div>
             </div>
-        <div className="flex md:row-start-1 md:row-span-1 md:col-span-5 md:-col-start-5 justify-center h-full w-full order-first md:order-last">
+        <div className="hidden md:flex md:row-start-1 md:row-span-1 md:col-span-5 md:-col-start-5 justify-center h-full w-full order-first md:order-last">
           <Image src={HERO} alt={"hero"} className="object-cover "/>
             </div>
           </div>
