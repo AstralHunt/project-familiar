@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource-variable/assistant": "^5.2.7",
     "@fontsource-variable/kumbh-sans": "^5.2.6",
     "@fontsource-variable/merriweather-sans": "^5.2.6",
     "@fontsource/geist-sans": "^5.2.5",

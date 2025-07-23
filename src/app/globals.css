@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import '@fontsource-variable/assistant';
+@import '@fontsource-variable/merriweather-sans';
+@import '@fontsource-variable/kumbh-sans';
 
 :root {
   --background: #ffffff;
@@ -15,6 +18,7 @@
   --font-mono: var(--font-geist-mono);
   --color-primary: #0F4662;
   --color-secondary: #176F9C;
+  --color-accent: #E05426;
   --shadow-3xl: 15px 25px 35px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -24,7 +28,6 @@
 /*    --foreground: #ededed;*/
 /*  }*/
 /*}*/
-
 
 body {
   h1 {
@@ -39,32 +42,35 @@ body {
     line-height: 1.2em;
   }
   h3 {
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 2rem;
   }
   h4 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+  h5 {
     color: #212121;
     font-size: 19px;
     font-weight: 200;
-  }
-  h5 {
-    font-size: 17px;
-    font-weight: 200;
+    line-height: 2rem;
   }
   h6 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 200;
+    line-height: 2rem;
   }
-
 
   background: var(--background);
   color: var(--foreground);
   /*font-family: Arial, Helvetica, sans-serif;*/
   /*font-family: 'Kumbh Sans Variable', sans-serif;*/
   font-family: 'Merriweather Sans Variable', sans-serif;
+  /*font-family: 'Assistant Variable', sans-serif;*/
   scroll-behavior: inherit;
 }
-
 
 @property --num {
   syntax: "<integer>";
@@ -73,10 +79,9 @@ body {
 }
 
 #total {
-  animation: counter 3s forwards ease-out;
+  animation: counter 5s forwards ease-out;
   counter-reset: num var(--num);
-  font: 800 40px system-ui;
-  padding: 2rem;
+  font: 800 55px 'Merriweather Sans Variable', sans-serif;
 }
 
 #total::after {
@@ -88,6 +93,6 @@ body {
     --num: 0;
   }
   to {
-    --num: 49 ;
+    --num: 26 ;
   }
 }

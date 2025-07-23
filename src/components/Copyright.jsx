@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Copyright = () => {
   return (
-    <div id="copyright" className=" w-screen h-[10rem] border-t-[1px] border-gray-200 bg-white flex justify-center items-center">
+    <div id="copyright" className=" w-screen h-[10rem] border-t-[1px] border-gray-200 bg-white border-rt flex justify-center items-center">
       <div className="h-full w-full flex flex-col justify-center items-center">
 
         <div className="w-[80px] h-[80px]">
@@ -14,7 +14,7 @@ const Copyright = () => {
             width={300}
             height={300}
           /></div>
-        <h4>© Project Familiar, 2025. All Rights Reserved.</h4>
+        <h6>© Project Familiar, 2025. All Rights Reserved.</h6>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const Hero = () => {
           <div className="flex flex-col justify-center items-start gap-3">
             <h1  className="w-full">Everyone deserves a helping hand.</h1>
             <h6 className="w-[80%]">Our superb team has designed a toolbox of solutions that lessens the workload on caregivers and helps dementia patients maintain familiarity with their daily lives&nbsp;
-              <a href=""><span className="text-primary font-[400]">all in one convenient tool</span></a>.</h6>
+              <a href=""><span className="text-primary font-[400]">all in one convenient web app</span></a>.</h6>
           </div>
           <div className="flex flex-col sm:flex-row w-full justify-start basis-1/5 gap-4">
           <a href="" className="flex items-center gap-2 text-lg font-bold bg-primary pt-4 pb-4 pl-6 pr-6 drop-shadow-lg drop-shadow-gray-400 rounded-xl text-white">

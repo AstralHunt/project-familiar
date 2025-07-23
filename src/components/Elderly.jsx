@@ -6,22 +6,25 @@ import { PiHeadCircuitFill } from "react-icons/pi";
 import FeatureCards from "@/components/FeatureCards";
 import DASHBOARD2 from "../../public/Dashboard2.png";
 import SCHEDULE from "../../public/Schedule.png";
+import RELATIONSHIP from "../../public/Relationship.png";
+import DIARY from "../../public/Diary.png";
+import WRITING from "../../public/writing.png";
 
 const Elderly = () => {
   return (
     <div id="elderly" className="flex flex-col pb-10 md:gap-12 md:pb-40 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full basis-1/2 md:w-[50vw] bg-primary p-8 md:p-12">
-          <div className="h-full flex flex-col items-center justify-between text-center pt-[10%]">
+          <div className="h-full flex flex-col items-center justify-between text-center pt-[5%]">
             <div>
-              <h2 className="text-white text-2xl md:text-4xl mb-4">Elderly</h2>
+              <h2 className="text-white text-2xl md:text-4xl mb-4">For the Elderly</h2>
               <h6
                 className="text-white/90 text-sm md:text-base md:mx-[10%] lg:mx-[15%] ">
                 From diaries to cognitive games, Familiar considers the patient's needs to remember the ones that love
                 them the most, their family members.
                 <br/>
                 <br/>
-                Designed to be easily navigable by older users, The Patient Portal offers larger buttons and no delete functionality as well, ensuring the patient's memories are always safe.
+                Designed to be easily navigable by older users, The Patient Portal offers larger buttons and no delete functionality, ensuring the patient's memories are always safe.
                 <br/>
               </h6>
             </div>
@@ -50,15 +53,24 @@ const Elderly = () => {
       {/*  </div>*/}
 
       {/*</div>*/}
-      <div className="flex flex-col gap-2 md:gap-24 justify-center items-center md:px-20">
-        <FeatureCards icon={"game"} image={DASHBOARD2} title={"Cognitive Games"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"left"}></FeatureCards>
 
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-20 justify-around items-center md:px-0">
 
-        <FeatureCards icon={"book"} image={SCHEDULE} title={"Synced Diary"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care fo"} position={"left"}></FeatureCards>
+        <FeatureCards icon={"people"} image={WRITING} title={"Relationships Library"} description={"Patients have access to a full gallery of all their relations and many photos of them."} position={"none"}></FeatureCards>
 
-        <FeatureCards icon={"people"} image={SCHEDULE} title={"Relationships Gallery"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help "} position={"left"}></FeatureCards>
+        <FeatureCards icon={"book"} image={WRITING} title={"Patient Diary"} description={"The diary system provides the patient an easy way to journal and record their thoughts."} position={"none"}></FeatureCards>
+
+        <FeatureCards icon={"game"} image={WRITING} title={"Cognitive Games"} description={"Patients can easily practice their cognition with a memory-based game and sharpen memory."} position={"none"}></FeatureCards>
+
+        {/*<FeatureCards icon={"people"} image={WRITING} title={"Relationships Gallery"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help "} position={"none"}></FeatureCards>*/}
 
       </div>
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-20 justify-start items-center md:px-0">
+        <FeatureCards icon={"schedule"} image={WRITING} title={"Synced Schedule"} description={"The diary system is synced so that when a patient's thoughts is recorded, it could be easily checked."} position={"none"}></FeatureCards>
+
+        <FeatureCards icon={"profile"} image={WRITING} title={"Patient Profile"} description={"The diary system is synced so that when a patient's thoughts is recorded, it could be easily checked."} position={"none"}></FeatureCards>
+      </div>
+
     </div>
   );
 };
