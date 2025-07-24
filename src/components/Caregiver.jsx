@@ -10,7 +10,7 @@ import WRITING from "../../public/writing.png";
 
 const Caregiver = () => {
   return (
-    <div id="caregiver" className="flex flex-col pb-10 md:gap-12 md:pb-40 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
+    <div id="caregiver" className="flex flex-col pb-10 md:gap-12 md:pb-30 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full basis-1/2 md:w-[50vw] h-[300px] md:h-auto">
           <Image className="w-full h-full object-cover" src={CAREGIVER} alt="caregiver" width={1280} height={856}
@@ -30,7 +30,7 @@ const Caregiver = () => {
         </div>
       </div>
       {/*CARDS*/}
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-20 justify-start items-center md:px-0">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-14 justify-start items-center md:px-0">
         <FeatureCards icon={"graph"} image={DASHBOARD2} title={"Dashboard Patient Monitoring"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"none"}></FeatureCards>
 
         <FeatureCards icon={"profile"} image={SCHEDULE} title={"Patient Account Creation"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n"} position={"none"}></FeatureCards>

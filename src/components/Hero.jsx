@@ -18,14 +18,14 @@ const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row w-full justify-start basis-1/5 gap-4">
           <a href="" className="flex items-center gap-2 text-lg font-bold bg-primary pt-4 pb-4 pl-6 pr-6 drop-shadow-lg drop-shadow-gray-400 rounded-xl text-white">
-                  <IoMdDownload /> View Proposal
-                </a>
-                <a href="" className="flex items-center gap-2 text-lg font-bold border-2 border-primary pt-4 pb-4 pl-6 pr-6 rounded-xl text-primary hover:bg-primary hover:text-white">
-                  <FaRegCirclePlay /> Watch Presentation
-                </a>
-              </div>
+                <IoMdDownload /> View Proposal
+              </a>
+              <a href="" className="flex items-center gap-2 text-lg font-bold border-2 border-primary pt-4 pb-4 pl-6 pr-6 rounded-xl text-primary hover:bg-primary hover:text-white">
+                <FaRegCirclePlay /> Watch Presentation
+              </a>
             </div>
-        <div className="hidden md:flex md:row-start-1 md:row-span-1 md:col-span-5 md:-col-start-5 justify-center h-full w-full order-first md:order-last">
+          </div>
+        <div className="hidden md:flex md:row-start-1 md:row-span-1 md:col-span-5 md:-col-start-5 justify-end h-full w-full order-first md:order-last">
           <Image src={HERO} alt={"hero"} className="object-cover "/>
             </div>
           </div>

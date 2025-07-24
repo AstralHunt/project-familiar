@@ -81,11 +81,14 @@ body {
 #total {
   animation: counter 5s forwards ease-out;
   counter-reset: num var(--num);
-  font: 800 55px 'Merriweather Sans Variable', sans-serif;
+  font: 800 85px 'Merriweather Sans Variable', sans-serif;
+  color: #ed5440;
+  line-height: 1;
 }
 
 #total::after {
   content: counter(num);
+    line-height: 1;
 }
 
 @keyframes counter {

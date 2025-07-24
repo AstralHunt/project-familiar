@@ -12,7 +12,7 @@ import WRITING from "../../public/writing.png";
 
 const Elderly = () => {
   return (
-    <div id="elderly" className="flex flex-col pb-10 md:gap-12 md:pb-40 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
+    <div id="elderly" className="flex flex-col pb-10 md:gap-12 md:pb-30 w-screen min-h-[30rem] mb-5 md:px-[10vw] md:scroll-mt-30">
       <div className="flex flex-col md:flex-row w-full">
         <div className="w-full basis-1/2 md:w-[50vw] bg-primary p-8 md:p-12">
           <div className="h-full flex flex-col items-center justify-between text-center pt-[5%]">
@@ -54,7 +54,7 @@ const Elderly = () => {
 
       {/*</div>*/}
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-20 justify-around items-center md:px-0">
+      <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-14 justify-around items-center md:px-0">
 
         <FeatureCards icon={"people"} image={WRITING} title={"Relationships Library"} description={"Patients have access to a full gallery of all their relations and many photos of them."} position={"none"}></FeatureCards>
 
