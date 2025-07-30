@@ -14,6 +14,8 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-primary: #0F4662;
+  --color-secondary: #176F9C;
+  --shadow-3xl: 15px 25px 35px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*@media (prefers-color-scheme: dark) {*/
@@ -26,31 +28,40 @@
 
 body {
   h1 {
+    color: #212121;
     font-size: 55px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.2em;
   }
   h2 {
     font-size: 55px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.2em;
   }
   h3 {
-    font-size: 40px;
-  }
-
-  h5 {
-    font-size: 19px;
-  }
-  h6 {
-    font-size: 17px;
+    font-size: 32px;
     font-weight: 500;
   }
+  h4 {
+    color: #212121;
+    font-size: 19px;
+    font-weight: 200;
+  }
+  h5 {
+    font-size: 17px;
+    font-weight: 200;
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 200;
+  }
+
 
   background: var(--background);
   color: var(--foreground);
   /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: 'Kumbh Sans Variable', sans-serif;
+  /*font-family: 'Kumbh Sans Variable', sans-serif;*/
+  font-family: 'Merriweather Sans Variable', sans-serif;
   scroll-behavior: inherit;
 }
 

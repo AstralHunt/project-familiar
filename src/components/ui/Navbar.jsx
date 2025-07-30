@@ -1,14 +1,38 @@
 "use client"
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
+import LOGO from "../../../public/LOGO.svg";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <div className="fixed flex top-0 w-full bg-white shadow-md z-50 px-4 md:px-[10vw]">
-      <nav className="flex justify-between w-full items-center h-20 md:h-32 py-4 md:py-8">
+    <div
+      className={`fixed flex top-0 w-full bg-white shadow-md z-50 px-4 md:px-[10vw] transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav className="flex justify-between w-full items-center h-20 md:h-32 py-4 md:py-8">
         <div className="flex justify-between md:justify-start md:basis-4/5 md:gap-12 w-full items-center">
         <div className="py-1">
-            <a href="" className="text-5xl text-[#176F9C] font-bold">Familiar</a>
+          <div className="flex">
+            <div className="w-[50px] h-[50px]">
+              <Image
+                src={LOGO}
+                alt="logo"
+                width={300}
+                height={300}
+              /></div>
+            <a href="" className="text-5xl text-[#176F9C] font-bold">Familiar</a></div>
           </div>
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,7 +60,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden md:flex justify-end basis-1/5">
-        <a href="" className="text-xl font-bold bg-primary pt-2 pb-2 pl-4 pr-4 rounded-xl text-white">View Site</a>
+        <a href="" className="text-lg font-bold bg-primary  pt-3 pb-3 pl-5 pr-5 rounded-xl text-white">Visit App</a>
         </div>
       </nav>
     </div>
