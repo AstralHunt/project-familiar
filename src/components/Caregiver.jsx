@@ -19,11 +19,11 @@ const Caregiver = () => {
         <div className="w-full basis-1/2 md:w-[50vw] bg-primary p-8 md:p-12">
           <div className="flex flex-col items-center justify-center text-center pt-[10%]">
             <h2 className="text-white text-2xl md:text-4xl mb-4">For the Caregivers</h2>
-            <h6 className="text-white/90 text-sm md:text-base md:px-[10%] lg:px-[20%]">
-
+            <h6 className="text-white/90 text-sm md:text-base md:mx-[10%] lg:mx-[15%]">
+              The Caregiver Portal is designed to help caregivers manage their patients' data and provides them with tools to monitor the patient's mental condition.
               <br/>
               <br/>
-              The Caregiver Portal is designed to help caregivers manage their patients' care and provide them with the tools they need to stay monitor the patient's mental condition and manage their data.
+              This includes a dashboard that provides an overview to all patients, and modules that let caregivers manage data for patient's features remotely.
               <br/>
             </h6>
           </div>
