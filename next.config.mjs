@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  devIndicators: {
-    buildActivity: false,
-  },
+
+  devIndicators:  false,
   images: {
     unoptimized: true,
   },
-  // output: 'export',
+  output: 'export',
 
 
 };
