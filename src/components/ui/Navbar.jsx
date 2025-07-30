@@ -25,7 +25,7 @@ const Navbar = () => {
     <nav className="flex justify-between w-full items-center h-20 md:h-32 py-4 md:py-8">
         <div className="flex justify-between md:justify-start md:basis-4/5 md:gap-8 w-full items-center">
           <div className="py-1">
-            <div className="flex items-center w-[160px] h-[100px]">
+            <div className="flex items-center w-[180px] h-[120px]">
               <a href="/">
                 <Image
                 src={TITLE}
@@ -60,7 +60,7 @@ const Navbar = () => {
             </ul>
           </div>
         <div className="hidden md:flex justify-end basis-1/5">
-        <a href="" className="text-lg font-bold bg-primary  pt-3 pb-3 pl-5 pr-5 rounded-xl text-white">Launch App</a>
+        <a href="https://familiar-project.vercel.app/landing" className="text-lg font-bold bg-primary  pt-3 pb-3 pl-5 pr-5 rounded-xl text-white">Launch App</a>
         </div>
       </nav>
     </div>

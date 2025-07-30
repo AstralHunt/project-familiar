@@ -66,9 +66,9 @@ const Elderly = () => {
 
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-20 justify-start items-center md:px-0">
-        <FeatureCards icon={"schedule"} image={WRITING} title={"Synced Schedule"} description={"The diary system is synced so that when a patient's thoughts is recorded, it could be easily checked."} position={"none"}></FeatureCards>
+        <FeatureCards icon={"schedule"} image={WRITING} title={"Synced Schedule"} description={"Patients can easily view a list of their routines provided by their caregivers."} position={"none"}></FeatureCards>
 
-        <FeatureCards icon={"profile"} image={WRITING} title={"Patient Profile"} description={"The diary system is synced so that when a patient's thoughts is recorded, it could be easily checked."} position={"none"}></FeatureCards>
+        <FeatureCards icon={"profile"} image={WRITING} title={"Patient Profile"} description={"Patient information is stored securely and could be viewed anytime by the patient."} position={"none"}></FeatureCards>
       </div>
 
     </div>

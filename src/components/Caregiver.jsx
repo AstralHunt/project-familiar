@@ -31,15 +31,15 @@ const Caregiver = () => {
       </div>
       {/*CARDS*/}
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-14 justify-start items-center md:px-0">
-        <FeatureCards icon={"graph"} image={DASHBOARD2} title={"Dashboard Patient Monitoring"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for."} position={"none"}></FeatureCards>
+        <FeatureCards icon={"graph"} image={DASHBOARD2} title={"Dashboard Patient Monitoring"} description={"Monitor patients under your care by showing each patient's cognitive scores and reminders."} position={"none"}></FeatureCards>
 
-        <FeatureCards icon={"profile"} image={SCHEDULE} title={"Patient Account Creation"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n"} position={"none"}></FeatureCards>
+        <FeatureCards icon={"profile"} image={SCHEDULE} title={"Patient Account Creation"} description={"Simple registration process let caregivers set up new patient profiles with ease."} position={"none"}></FeatureCards>
 
-        <FeatureCards icon={"schedule"} image={SCHEDULE} title={"Schedule Management"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n"} position={"none"}></FeatureCards>
+        <FeatureCards icon={"schedule"} image={SCHEDULE} title={"Schedule Management"} description={"Create, edit, and organize daily routines that is synced with the patient device."} position={"none"}></FeatureCards>
 
-        <FeatureCards icon={"people"} image={SCHEDULE} title={"Relations Data Management"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n"} position={"none"}></FeatureCards>
+        <FeatureCards icon={"people"} image={SCHEDULE} title={"Relations Data Management"} description={"Remotely organize patient's family photos and relationship connections through caregiver device."} position={"none"}></FeatureCards>
 
-        <FeatureCards icon={"book"} image={SCHEDULE} title={"Diary Monitoring"} description={"Family members and care workers are provided with an arsenal of tools to monitor and help the ones they care for.\n"} position={"none"}></FeatureCards>
+        <FeatureCards icon={"book"} image={SCHEDULE} title={"Diary Monitoring"} description={"Read and review patient diary entries to stay informed about their daily thoughts and concerns."} position={"none"}></FeatureCards>
 
       </div>
     </div>
